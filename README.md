@@ -1,3 +1,9 @@
+Account Login:
+Email: a@a.com
+Pass: user
+
+------------------------------------------------
+
 📝 To-Do List App with React (Next.js + TypeScript) A simple and clean To-Do List application built with React, Next.js (App Router), and TypeScript. This app allows users to:
 
 ✅ Add new tasks
