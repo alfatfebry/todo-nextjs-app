@@ -1,0 +1,32 @@
+.headerDashboard{
+  border-bottom: 1px solid #D8D8D8;
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 17.5rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+
+  .headerWrapper{
+    padding: 0 2rem;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:1rem;
+
+    .nameUser{
+      font-family: inter;
+    }
+
+    .imageProfileWrap{
+      width: 44px;
+      height: 44px;
+      overflow: hidden;
+
+
+    }
+  }
+
+}

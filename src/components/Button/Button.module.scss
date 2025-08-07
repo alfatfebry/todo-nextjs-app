@@ -1,0 +1,35 @@
+.button{
+  height: 48px;
+  position: relative;
+  padding:12px 34px;
+  color:#fff;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 12px;
+}
+.long{
+  width: 100%;
+}
+.medium{
+  width: 50%;
+}
+.small{
+  width: fit-content;
+}
+.primary{
+  background-color: #0062FF;
+}
+
+.secondary{
+  background-color: #F1F1F5;
+  color:#696974;
+}
+
+.danger{
+  background-color: #FC5A5A;
+}
+
+.error{
+  color: #FC5A5A;
+}

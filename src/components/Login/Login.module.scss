@@ -1,0 +1,326 @@
+
+
+.pageTitle{
+  font-family: Poppins;
+  font-size:56px;
+  font-weight: 700;
+  color:#44444F;
+  line-height: normal;
+  margin-bottom: 14px;
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+
+  .formGroup {
+    margin:0 auto;
+    text-align: center;
+    position: relative;
+    padding:0 1rem;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      padding:0;
+      width: 35rem;
+    }
+
+    .switchForm{
+      color: #0062FF;
+      font-size: 14px;
+      font-family: Roboto;
+      font-weight: 500;
+    }
+    .textFormDesc{
+      color:#92929D;
+    }
+
+    .formWrap{
+      min-width: 100%;
+      border-radius: 10px;
+      padding:1rem;
+      margin:1.875rem 0;
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) ;
+
+      @media (min-width: 768px) {
+        padding:1.875rem;
+        margin-top: 2.5rem;
+        
+      }
+
+      .formMarg{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+
+        .rowField{
+          display: flex;
+          gap:20px;
+          flex: 1;
+        }
+
+        .inputGroup{
+          position: relative;
+          border:1px solid #E2E2EA;
+          border-radius: 10px;
+          flex: 1;
+
+          label {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: #B5B5BE;
+            background: white;
+            padding: 0 4px;
+            transition: 0.2s ease all;
+            pointer-events: none;
+            font-size: 14px;
+            font-family: Roboto;
+          }
+
+          .customInput{
+            width: 100%;
+            height: 48px;
+            position: relative;
+            padding:12px 16px;
+
+            &:focus + label,
+            &:not(:placeholder-shown) + label {
+              top: -2px;
+              left: 8px;
+            }
+          }
+
+          &.wrong {
+            border-color: #FC5A5A;
+
+            label {
+              color: #FC5A5Aed;
+            }
+          }
+
+          &.true {
+            border-color:#50B5FF;
+
+            label {
+              color: #50B5FF;
+            }
+          }
+        }
+
+        .othGroup{
+          flex: 1;
+
+          .checkboxContainer {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            gap: 8px;
+            user-select: none;
+
+            input[type="checkbox"] {
+              display: none;
+            }
+
+            label {
+              position: relative;
+              cursor: pointer;
+              color:#696974;
+              font-size: 14px;
+              font-family: Roboto;
+              padding-left: 20px;
+
+              &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background: #fff;
+                transition: all 0.2s ease;
+              }
+            }
+
+            input[type="checkbox"]:checked + label::before {
+              background: #4db5ff; 
+              border-color: #4db5ff;
+            }
+
+            input[type="checkbox"]:checked + label::after {
+              content: '✔';
+              position: absolute;
+              left: 3px;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 12px;
+              color:#fff;
+              font-family: Poppins;
+            }
+
+          }
+
+          .forgotPassword{
+            margin-left: auto;
+            font-size: 14px;
+            font-family: Roboto;
+            font-weight: 500;
+            color: #50B5FF;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// =======================================
+
+// .pageTitle{
+//   font-family: Poppins;
+//   font-size:56px;
+//   font-weight: 700;
+//   color:#44444F;
+//   line-height: normal;
+//   margin-bottom: 14px;
+// }
+
+// .formContainer {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100dvh;
+
+//   .formGroup {
+//     margin:0 auto;
+//     text-align: center;
+//     position: relative;
+//     padding:0 1rem;
+//     width: 100%;
+
+//     @media (min-width: 768px) {
+//       padding:0;
+//       width: 35rem;
+//     }
+
+//     .textFormDesc{
+//       color:#92929D;
+//     }
+    
+//     .formWrap{
+//       min-width: 100%;
+//       border-radius: 10px;
+//       padding:1rem;
+//       margin:1.875rem 0;
+//       display: flex;
+//       flex-direction: column;
+//       gap:20px;
+//       box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) ;
+
+//       @media (min-width: 768px) {
+//         padding:1.875rem;
+//         margin-top: 2.5rem;
+        
+//       }
+
+//       .formMarg{
+//         display: flex;
+//         flex-direction: column;
+//         gap:20px;
+//         width: 100%;
+
+//         @media (min-width: 768px) {
+//           flex-direction: row;
+//         }
+
+//         .rowField{
+//           display: flex;
+//           gap:20px;
+//           flex: 1;
+//         }
+        
+//       }
+
+//       .inputGroup{
+//         position: relative;
+//         border:1px solid #E2E2EA;
+//         border-radius: 10px;
+//         flex: 1;
+        
+//         label {
+//           position: absolute;
+//           top: 50%;
+//           left: 12px;
+//           transform: translateY(-50%);
+//           color: #B5B5BE;
+//           background: white;
+//           padding: 0 4px;
+//           transition: 0.2s ease all;
+//           pointer-events: none;
+//           font-size: 14px;
+//           font-family: Roboto;
+//         }
+
+//         .customInput{
+//           width: 100%;
+//           height: 48px;
+//           position: relative;
+//           padding:12px 16px;
+
+//           &:focus + label,
+//           &:not(:placeholder-shown) + label {
+//             top: -2px;
+//             left: 8px;
+//           }
+//         }
+
+//         &.wrong {
+//           border-color: #FC5A5A;
+
+//           label {
+//             color: #FC5A5Aed;
+//           }
+//         }
+
+//         &.true {
+//           border-color:#50B5FF;
+
+//           label {
+//             color: #50B5FF;
+//           }
+//         }
+//       }
+
+      
+//     }
+
+
+//   }
+// }
+
+
+
