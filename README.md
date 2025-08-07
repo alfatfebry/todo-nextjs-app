@@ -1,4 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📝 To-Do List App with React (Next.js + TypeScript) A simple and clean To-Do List application built with React, Next.js (App Router), and TypeScript. This app allows users to:
+
+✅ Add new tasks
+
+🟩 Mark tasks as complete/incomplete
+
+❌ Delete individual tasks
+
+🗑️ Delete all selected (completed) tasks
+
+💡 Features Built with Next.js 14 (App Router)
+
+Styled with SCSS Modules
+
+Component-based architecture
+
+Icons using react-icons
+
+Fully functional without backend (using React state)
+
+📦 Tech Stack Next.js (App Router)
+
+TypeScript
+
+SCSS Modules
+
+React Icons
 
 ## Getting Started
 
